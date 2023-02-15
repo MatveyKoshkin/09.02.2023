@@ -22,7 +22,8 @@ int main(void) {
     for (i = 0; i < MAX; i++) {
         llist_add(&newnode, (rand() % 100));
     }
-
+    
+    setlocale(LC_ALL, "Russian");
     head = newnode;
     cout << "До сортировки: \n";
     llist_print();
